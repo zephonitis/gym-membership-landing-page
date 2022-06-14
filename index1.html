@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASWIN's FITNESS CLUB</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(87077a50da60590b2cafd9123d5f7b33.jpg);
+    }
+
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 110px;
+        filter: invert(100%);
+        /* this is done to change white color to black and black to white */
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 5px;
+        font-size: 15px;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid gold; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 15px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Roboto Mono', monospace;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background-color: rgb(53, 51, 51);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        border-radius: 5px;
+        margin: 106px 800px;
+        padding: 106px 20px;
+        width: 33%;
+
+    }
+    .form-group input{
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        display: block;
+        width: 375px;
+        padding: 4px;
+        margin: 7px auto;
+        border: 2px solid black;
+        font-size: 21px;
+        border-radius: 10px;
+    } 
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 20%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="download (1).png" alt="">
+            <div><strong> ASWIN FITNESS</strong></div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Krishnanagar now!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email-ID">
+            </div>
+           
+            <button class="btn">SUBMIT NOW</button>
+        </form>
+    </div>
+</body>
+
+</html>
